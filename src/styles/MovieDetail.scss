@@ -1,0 +1,46 @@
+.movie-detail-container {
+  padding: 20px;
+}
+
+.movie-detail-card {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(0deg, #f8f9fa, var(--bs-primary-bg-subtle));
+  padding: 10px 20px;
+}
+
+.movie-detail-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.movie-detail-img-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-detail-info {
+  padding: 5px;
+}
+
+.movie-detail-info .card-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.movie-detail-info .card-text {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.movie-detail-info strong {
+  font-weight: bold;
+  color: #333;
+}

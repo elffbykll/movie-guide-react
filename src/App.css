@@ -1,0 +1,7 @@
+html, body {
+  background: #7f0a0a; /* Arka plan rengini belirleyin */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}

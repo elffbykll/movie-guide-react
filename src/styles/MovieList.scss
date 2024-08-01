@@ -1,0 +1,221 @@
+#root {
+    background: #f4f4f4;
+  }
+  
+  .movie-list-container {
+    min-height: 100vh;
+    margin: 1px 0;
+    background: linear-gradient(0deg, #f8f9fa, var(--bs-primary-bg-subtle));
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+  
+    h1 {
+      color: #333;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 2.5rem;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+  
+    .search-form {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+  
+      .form-control,
+      .form-select {
+        border-radius: 0.5rem;
+        border: 1px solid #ced4da;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s, box-shadow 0.3s;
+        
+        &:focus {
+          border-color: #007bff;
+          box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+        }
+      }
+  
+      .btn-clear {
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+        color: #495057;
+        border-radius: 0.5rem;
+        transition: background-color 0.3s, border-color 0.3s;
+  
+        &:hover {
+          background-color: #e2e6ea;
+          border-color: #9ec5fe;
+        }
+      }
+    }
+  
+    .movie-card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 8px;
+      background: #fff;
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+  
+      .card-img-wrapper {
+        flex-shrink: 0;
+        height: 280px;
+        background: #e9ecef;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+  
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+  
+      .card-body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+        overflow: hidden;
+  
+        .movie-title {
+          font-size: 1.25rem;
+          margin-bottom: 0.5rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #333;
+        }
+  
+        .movie-year {
+          color: #666;
+        }
+  
+        .imdb-info {
+          color: #007bff;
+        }
+      }
+    }
+  
+    .pagination {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0;
+      list-style: none;
+  
+      .page-item {
+        cursor: pointer;
+        margin: 0 0.3rem;
+  
+        &.active .page-link {
+          background-color: #007bff;
+          border-color: #007bff;
+          color: #ffffff;
+          font-weight: bold;
+        }
+  
+        .page-link {
+          padding: 0.5rem 0.75rem;
+          border-radius: 50%;
+          background: #f8f9fa;
+          border: 1px solid #dee2e6;
+          margin: 0 0.2rem;
+          min-width: 2.5rem;
+          text-align: center;
+          transition: background-color 0.3s, border-color 0.3s;
+          font-weight: 500;
+  
+          &:hover {
+            background-color: #e2e6ea;
+          }
+        }
+  
+        &:first-child .page-link,
+        &:last-child .page-link {
+          border-radius: 50%;
+        }
+  
+        &.disabled .page-link {
+          pointer-events: none;
+          color: #6c757d;
+          background-color: #e9ecef;
+          border-color: #dee2e6;
+        }
+      }
+    }
+  
+    .card-img-wrapper {
+      background: #e9ecef;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+  
+    .card-img-wrapper img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  
+    .movie-card .card-body {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .movie-title {
+      font-size: 1rem;
+      font-weight: bold;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  
+    .movie-info {
+      font-size: 0.9rem;
+    }
+  
+    .movie-year {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #555;
+    }
+  
+    .imdb-info {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #007bff;
+    }
+  
+    .favorite-icon {
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+  }
+  
