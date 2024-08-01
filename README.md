@@ -1,58 +1,61 @@
 # Movie Guide
 
-Movie Guide, kullanıcıların çeşitli filmleri arayabileceği, favori filmlerini işaretleyebileceği ve sayfalama yapabileceği bir React uygulamasıdır. Uygulama, OMDb API'sini kullanarak film bilgilerini sağlar ve kullanıcı deneyimini geliştirmek için SCSS ile özelleştirilmiş stiller içerir. Ayrıca, favori filmler yerel depolamada saklanır.
+Movie Guide is a React application that allows users to search for movies, mark their favorites, and paginate through results. The application uses the OMDb API to provide movie information and features custom styles with SCSS to enhance user experience. Additionally, favorite movies are stored in local storage.
 
-## Özellikler
+## Features
 
-- **Film Listeleme:** Filmler, ad, çıkış tarihi ve IMDb ID'si ile birlikte grid şeklinde listelenir.
-- **Sayfalama:** Her sayfada 10 film görüntülenir.
-- **Arama:** Film adını arayarak film arayabilir. Varsayılan olarak "Pokemon" ile arama yapılır.
-- **Yıl Filtreleme:** Kullanıcılar belirli bir yıl içinde çıkan filmleri listeleyebilir.
-- **Tür Seçimi:** Kullanıcılar sadece filmleri, TV dizilerini veya TV dizisi bölümlerini arayabilir.
-- **Film Detayları:** Kullanıcılar bir filme tıkladığında, filme ait detayları (poster, başlık, süre, tür, yönetmen, oyuncular, IMDb puanı vb.) içeren detay sayfasına yönlendirilir.
-- **Favoriler:** Kullanıcılar beğendikleri filmleri favorilere ekleyebilir ve favorileri temizleyebilir. Favoriler yerel depolamada saklanır.
-- **Filtre Temizleme:** Arama ve filtreleme seçeneklerini temizlemek için bir buton mevcut.
+- **Movie Listing:** Movies are displayed in a grid format with name, release date, and IMDb ID.
+- **Pagination:** Shows 10 movies per page.
+- **Search:** Search for movies by name, with "Pokemon" as the default search term.
+- **Year Filtering:** Users can list movies released in a specific year.
+- **Type Selection:** Users can search for movies, TV series, or TV series episodes.
+- **Movie Details:** Clicking on a movie redirects to a detail page showing information like poster, title, duration, genre, director, cast, IMDb rating, etc.
+- **Favorites:** Users can add or remove movies from their favorites, which are stored in local storage. There is also a button to clear favorites.
+- **Clear Filters:** A button is available to clear search and filter options.
 
-## Teknolojiler
+## Technologies
 
-- **React:** Kullanıcı arayüzü oluşturmak için.
-- **React-Bootstrap:** Kullanıcı arayüzü bileşenleri için.
-- **React Router:** Sayfalar arasında geçiş yapmak için.
-- **OMDb API:** Film verilerini sağlamak için.
-- **SCSS:** Özel stil düzenlemeleri için.
-- **Local Storage:** Favori filmleri saklamak için.
+- **React:** For building the user interface.
+- **React-Bootstrap:** For UI components.
+- **React Router:** For page navigation.
+- **OMDb API:** For providing movie data.
+- **SCSS:** For custom styling.
+- **Local Storage:** For storing favorite movies.
 
-## Kurulum
+## Installation
 
-1. Bu projeyi bilgisayarınıza klonlayın:
+1. Clone the repository to your local machine:
     ```bash
     git clone https://github.com/elffbykll/movie-guide-react.git
     ```
 
-2. Proje dizinine gidin:
+2. Navigate to the project directory:
     ```bash
     cd movie-guide
     ```
 
-3. Bağımlılıkları yükleyin:
+3. Install the dependencies:
     ```bash
     npm install
     ```
 
-4. Uygulamayı başlatın:
+4. Start the application:
     ```bash
     npm start
     ```
 
-## Kullanım
+## Usage
 
-- **Ana Sayfa:** Uygulama başladığında, varsayılan olarak "Pokemon" ile arama yapılır ve sonuçlar grid şeklinde görüntülenir.
-- **Arama:** Film adını girerek arama yapabilirsiniz.
-- **Yıl ve Tür Filtreleme:** Arama kutusunun yanında yıl ve tür filtreleme seçeneklerini kullanarak aramanızı daraltabilirsiniz.
-- **Favoriler:** Filmleri favorilere eklemek veya çıkarmak için kalp simgesine tıklayın. Favoriler yerel depolamada saklanır ve filtre temizleme butonunu kullanarak tüm filtreleri sıfırlayabilirsiniz.
-- **Film Detayları:** Bir filme tıkladığınızda, film detaylarının yer aldığı sayfaya yönlendirilirsiniz.
-- **Sayfalama:** Sayfalama butonlarını kullanarak arama sonuçlarını gezebilirsiniz.
+- **Home Page:** When the application starts, it performs a default search for "Pokemon" and displays the results in a grid.
+Search: Enter a movie name to perform a search.
+- **Year and Type Filtering:** Use the filters next to the search box to narrow down your search by year and type.
+- **Favorites:** Click on the heart icon to add or remove movies from favorites. Favorites are stored in local storage, and you can use the clear filters button to reset all filters.
+- **Movie Details:** Clicking on a movie redirects you to a details page with information about the movie.
+- **Pagination:** Use pagination buttons to navigate through search results.
 
-## API Kullanımı
+## API Usage
 
-Bu proje, [OMDb API](http://www.omdbapi.com/) kullanarak film verilerini sağlar. API anahtarını almak için [OMDb API web sitesine](http://www.omdbapi.com/) kaydolmanız gerekmektedir. Anahtarınızı `./api/omdpApi.js` dosyasında API_KEY değerine eklemeyi unutmayın.
+This project uses the OMDb API to fetch movie data. You need to sign up on the OMDb API website to get an API key. Make sure to add your API key to the ./api/omdbApi.js file in the API_KEY variable.
+
+![alt text](image.png)
+![alt text](image-1.png)
